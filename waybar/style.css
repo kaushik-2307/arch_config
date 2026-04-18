@@ -64,39 +64,30 @@ window#waybar.empty #window {
 
 #workspaces button {
   color: @fg;
-  background-color: transparent;
-  margin: 2px;
-  padding: 0 5px;
-  border-radius: 0;
+  background-color: #1e1e1e;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
 }
 
-
-#workspaces button:first-child {
-  border-radius: 1px 0 0 1px;
+#workspaces button:hover{
+  padding: 5px 20px 5px 20px;
+  color :@bg;
+  background-color: @fg
 }
 
-#workspaces button:last-child {
-  border-radius: 0 1px 1px 0;
-}
-
-#workspaces button:first-child:last-child {
-  border-radius: 1px;
-}
 
 #workspaces button.urgent {
   color: red;
-  background-color: yellow;
+  background-color: @bg;
 }
 
 #workspaces button.active {
   background-color: @rd1;
+  padding: 5px 20px 5px 20px;
   color: @bg;
 }
 
-#workspaces button.empty {
-  color: @fg;
-  opacity: 0.4;
-}
 
 #workspaces button.empty.active {
   color: @bg;
@@ -105,12 +96,12 @@ window#waybar.empty #window {
 
 /* --- Custom Color+Shdow Omarchy --- */
 #custom-omarchy{
-  padding: 0 5px;
+  padding: 0px 13px 0px 7px;
   font-size: 30px;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: @bg;
   color: @rd1;
-  margin: 1px 8px 2px 0px;
+  margin: 1px 5px 2px 1px;
 }
 #window{
   padding: 0 5px;
@@ -155,8 +146,11 @@ window#waybar.empty #window {
 #temperature:hover,
 #bluetooth:hover,
 #network:hover,
+#custom-omarchy:hover,
+#clock:hover,
 #pulseaudio:hover {
- background-color: @ia1;
+ background-color: @fg;
+ color:@bg
 }
 
 #cava {
