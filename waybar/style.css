@@ -47,10 +47,9 @@ window#waybar.empty #window {
 .modules-right {
   margin-right: 5px;
   background: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
   border-radius: 2px;
-  margin: 1px 0px 2px 0px;
-  padding: 0px 8px 0px 8px ;
+  margin: 2px 2px 2px 2px;
+  padding: 5px 15px 5px 15px ;
 }
 
 /* --- Workspaces --- */
@@ -141,6 +140,7 @@ window#waybar.empty #window {
 
 /* --- Right module Hover color --- */
 #cpu:hover,
+#custom-powermenu:hover,
 #memory:hover,
 #battery:hover,
 #temperature:hover,

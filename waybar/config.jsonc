@@ -129,9 +129,9 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon}",
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰈀",
+    "format": "{icon} ",
+    "format-wifi": "{icon} ",
+    "format-ethernet": "󰈀 ",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -217,9 +217,9 @@
   },
 
   "mpris": {
-    "format": "{artist} - {title}",
+    "format": "{status_icon} {title}",
     //"format": "{player_icon} {artist} - {title}",
-    //"format-paused": "{status_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {artist} - {title}",
     "player-icons": {
       "default": "🎵",
       "mpv": "🎵"
@@ -252,7 +252,7 @@
   },
 
 "temperature": {
-        "thermal-zone": 2,
+        "thermal-zone": 1,
         "format":"{temperatureC}°C ",
         "critical-threshold": 70,
         "format-critical": " {temperatureC}°C",
@@ -277,7 +277,7 @@
     "interval": 2
   },
   "custom/powermenu": {
-    "format": "⏻",
+    "format": "⏻ ",
     "on-click": "~/.config/rofi/powermenu/powermenu.sh"
   }
 
