@@ -1,7 +1,4 @@
-*zen
-*gtk-3.0
-*gtk-4.0
-*pulse
-*session
-*yay
-
+zen*
+yay*
+gtk-3.0*
+dolphinrc
