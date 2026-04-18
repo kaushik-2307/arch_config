@@ -20,7 +20,6 @@ window#waybar {
   background-color: transparent;
   border-bottom: 0px;
   transition-property: background-color;
-  transition-duration: .5s;
 }
 
 window#waybar.hidden {
@@ -60,6 +59,7 @@ window#waybar.empty #window {
   box-shadow: 1px 1px 3px 0px @ia1;
   margin: 1px 8px 2px 0px;
   border-radius: 2px;
+  animation: animate 21s ease infinite;
 }
 
 #workspaces button {
@@ -150,7 +150,8 @@ window#waybar.empty #window {
 #clock:hover,
 #pulseaudio:hover {
  background-color: @fg;
- color:@bg
+ color:@bg;
+
 }
 
 #cava {
