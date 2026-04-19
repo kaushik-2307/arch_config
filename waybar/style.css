@@ -33,7 +33,7 @@ window#waybar.empty #window {
 
 /* --- Modules --- */
 .modules-left {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .modules-center {
@@ -112,13 +112,22 @@ window#waybar.empty #window {
 }
 
 /* --- General Modules --- */
-
+#bluetooth,
+#network{
+  font-size: 25px}
+#custom-powermenu{
+  color:@fg;
+  padding:0px 10px 0px 5px
+}
+#network{
+  color:@fg;
+  padding:0px 15px 0px 5px
+}
 #tray,
 #cava,
 #memory,
 #cpu,
 #battery,
-#network,
 #custom-updatespacman,
 #temperature,
 #bluetooth,
@@ -127,12 +136,11 @@ window#waybar.empty #window {
 #custom-update,
 #custom-screenrecording-indicator,
 #custom-idle-indicator,
-#custom-powermenu,
 #custom-nvidia,
 #custom-notification-silencing-indicator,
 #clock {
   min-width: 12px;
-  padding: 0 5px;
+  padding: 0px 5px 0px 5px;
   margin: 0 2px;
   color: @fg
   
@@ -148,6 +156,8 @@ window#waybar.empty #window {
 #network:hover,
 #custom-omarchy:hover,
 #clock:hover,
+#cava:hover,
+#mpris:hover,
 #pulseaudio:hover {
  background-color: @fg;
  color:@bg;
@@ -156,10 +166,9 @@ window#waybar.empty #window {
 
 #cava {
   padding: 0 5px;
-  background-color: @background;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
+  background-color: @bg;
+  border-radius: 10px;
+  margin: 1px 10px 2px -10px;
   border-radius: 0;
 }
 

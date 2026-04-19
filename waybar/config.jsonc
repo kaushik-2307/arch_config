@@ -116,7 +116,7 @@
     "memory": {
     "interval": 2,
     "format": " {percentage}%",
-    "on-click": "omarchy-launch-or-focus-tui btop"
+    "on-click": "kitty btop"
   },
     "network": {
     "format-icons": [
@@ -126,9 +126,9 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon} ",
-    "format-wifi": "{icon} ",
-    "format-ethernet": "󰈀 ",
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -186,7 +186,7 @@
     "on-click": "kitty --title=bluetui bluetui"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon}",
+    "format": "{volume}% {icon} ",
     "on-click": "kitty --title=wiremix wiremix",
     "on-click-right": "kitty wiremix",
     "tooltip-format": "Playing at {volume}%",
@@ -216,15 +216,16 @@
   "mpris": {
     "format": "{status_icon} {title}",
     //"format": "{player_icon} {artist} - {title}",
-    "format-paused": "{status_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {title}",
     "player-icons": {
       "default": "🎵",
       "mpv": "🎵"
     },
     "status-icons": {
-      "paused": "⏸"
+      "paused": "⏸",
+      "playing":""
     },
-    "max-length": 30
+    "max-length": 15
   },
   
   "custom/weather": {
@@ -274,7 +275,7 @@
     "interval": 2
   },
   "custom/powermenu": {
-    "format": "⏻ ",
+    "format": "⏻",
     "on-click": "~/.config/rofi/powermenu/powermenu.sh"
   }
 
