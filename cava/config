@@ -168,21 +168,21 @@
 # on noncurses output.
 # Note: many fonts have weird or missing glyphs for characters used in orientations
 # other than 'bottom', which can make output not look right.
-; orientation = bottom
+orientation = horizontal
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
 # 'mono' outputs left to right lowest to highest frequencies.
 # 'mono_option' set mono to either take input from 'left', 'right' or 'average'.
 # set 'reverse' to 1 to display frequencies the other way around.
-; channels = stereo
-; mono_option = average
-; reverse = 0
+channels = stereo
+mono_option = average
+reverse = 0
 
 # Only valid if orientation is set to 'horizontal'.
 # Set 'horizontal_stereo' to 1 to have left channel bars at top and right channel at bottom.
 # Set 'left_bottom' to 0 to have right channel at top and left channel at bottom.
-; horizontal_stereo = 0
+horizontal_stereo = 1
 ; left_bottom = 1
 
 # Raw output target.

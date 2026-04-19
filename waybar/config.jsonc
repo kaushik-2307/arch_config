@@ -236,13 +236,17 @@
   },
 
 "cava": {
-    "framerate": 60,
+    "cava_config": "/home/kaushik/.config/cava/config",
+    "framerate": 165,
+    "method": "sdl_glsl",
+    "orientation":"horizontal",
     "autosens": 0,
     "bars": 12,
+    "stereo" : true,
     "method": "pipewire",
     "source": "auto",
     "bar_delimiter": 0,
-    "input_delay": 2,
+    "input_delay": 0,
     "sleep_timer": 2,
     "hide_on_silence": true,
     "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
