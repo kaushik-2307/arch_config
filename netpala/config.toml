@@ -1,0 +1,54 @@
+# Netpala Configuration File
+# Keybindings can be customized below.
+# Available modifiers: ctrl, alt, shift
+# Examples: "ctrl+c", "shift+tab", "alt+enter", "a", "up", "down", "left", "right"
+# Special keys: enter, space (use " "), tab, backspace, delete, esc, up, down, left, right
+# Multiple keys can be assigned to the same action.
+
+[keybindings]
+  [keybindings.up]
+    keys = ["k", "up"]
+    help = "Up"
+  [keybindings.down]
+    keys = ["j", "down"]
+    help = "Down"
+  [keybindings.next_pane]
+    keys = ["tab"]
+    help = "Next"
+  [keybindings.prev_pane]
+    keys = ["shift+tab"]
+    help = "Prev"
+  [keybindings.select]
+    keys = ["enter", " "]
+    help = "Dis/Connect"
+  [keybindings.remove]
+    keys = ["backspace", "delete"]
+    help = "Remove"
+  [keybindings.scan]
+    keys = ["s"]
+    help = "Scan"
+  [keybindings.toggle_autoconnect]
+    keys = ["a"]
+    help = "Auto"
+  [keybindings.toggle_hidden]
+    keys = ["h"]
+    help = "Hidden"
+  [keybindings.edit]
+    keys = ["e"]
+    help = "Edit"
+  [keybindings.quit]
+    keys = ["q", "ctrl+c", "ctrl+q", "ctrl+w"]
+    help = "Quit"
+  [keybindings.cancel]
+    keys = ["esc"]
+    help = "Cancel"
+
+[colors]
+  primary = "#a7abca"
+  active = "#9cca69"
+  active_text = "#cda162"
+  selection_bg = "#5a6988"
+  inactive = "#444a66"
+  error = "#ff0000"
+  error_text = "#aa0000"
+  help_text = "#a7abca"
