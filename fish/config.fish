@@ -11,10 +11,6 @@ if status is-interactive
         set -x PATH $HOME/.local/bin $PATH
     end
 
-    # Environment Variables
-    if test -f $XDG_CONFIG_HOME/fish/env.fish
-        source $XDG_CONFIG_HOME/fish/env.fish
-    end
 
     # ▄▀█ █▄▄ █▄▄ █▀█   ▄▀█ █▄░█ █▀▄   ▄▀█ █░░ █ ▄▀█ █▀
     # █▀█ █▄█ █▄█ █▀▄   █▀█ █░▀█ █▄▀   █▀█ █▄▄ █ █▀█ ▄█
