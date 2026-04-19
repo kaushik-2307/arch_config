@@ -29,7 +29,7 @@ col_blk = '#000000'
 # col_usr = '5'
 col_usr = '#ffce6a'
 col_dir = '#89B4FA'
-col_git = '#89B4FA'
+col_git = '#cccccc'
 # col_chk = '5'
 col_chk = '#A6E3A1'
 
