@@ -66,7 +66,7 @@ case_sensitive_sort = false
 
 #-- Exit Shell on Success
 # Whether to exit the shell on successful command execution.
-shell_close_on_success = false
+shell_close_on_success = true
 
 #-- Page Scroll Size
 # Number of lines to scroll for PgUp/PgDown keys (0: full page, default behavior).
@@ -123,7 +123,7 @@ file_preview_width = 0
 #-- File Preview Border
 # Enable border around the file preview panel for better visual separation.
 # Default: false (no border)
-enable_file_preview_border = false
+enable_file_preview_border = true
 
 #-- Sidebar Width
 # If you don't want to display the sidebar, you can input 0 directly.
@@ -154,7 +154,7 @@ border_middle_right = '┤'
 
 #-- Detailed Metadata
 # Requires: exiftool
-metadata = false
+metadata = true
 
 #-- MD5 Checksum Generation
 # Requires: md5sum
