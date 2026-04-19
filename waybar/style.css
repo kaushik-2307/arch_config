@@ -132,6 +132,7 @@ window#waybar.empty #window {
 #bluetooth,
 #pulseaudio,
 #custom-weather,
+#backlight,
 #custom-update,
 #custom-screenrecording-indicator,
 #custom-idle-indicator,
@@ -156,6 +157,7 @@ window#waybar.empty #window {
 #custom-omarchy:hover,
 #clock:hover,
 #cava:hover,
+#backlight:hover,
 #mpris:hover,
 #pulseaudio:hover {
  background-color: @fg;

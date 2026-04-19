@@ -11,10 +11,11 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces","mpris","cava"],
   "modules-center": ["clock"],
   "modules-right": [
-    "bluetooth",
-    "network",
+    "backlight",
     "pulseaudio",
-    "battery","custom/powermenu"
+    "battery",
+    "bluetooth",
+    "network","custom/powermenu"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -139,7 +140,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "format-plugged": " {capacity}%",
+    "format-plugged":" {capacity}%",
     "format-icons": {
       "charging": [
         "󰢜",
@@ -184,7 +185,7 @@
     "on-click": "kitty --title=bluetui bluetui"
   },
   "pulseaudio": {
-    "format": "{volume}% {icon} ",
+    "format": "{icon} {volume}%",
     "on-click": "kitty --title=wiremix wiremix",
     "on-click-right": "kitty wiremix",
     "tooltip-format": "Playing at {volume}%",
@@ -275,6 +276,11 @@
   "custom/powermenu": {
     "format": "⏻",
     "on-click": "~/.config/rofi/powermenu/powermenu.sh"
-  }
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", ""]
+}
 
 }
