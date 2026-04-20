@@ -35,11 +35,14 @@ window#waybar.empty #window {
 /* --- Modules --- */
 .modules-left {
   margin-left: 10px;
+  border : 1px solid @ia1;
+  box-shadow: 3px 3px 3px 0px @ia1
 }
 
 .modules-center {
   background: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
+  border: 1px solid @ia1;
+  box-shadow: 3px 3px 3px 0px @ia1;
   margin: 1px 8px 2px 0px;
   border-radius: 5px;
   padding: 0px;
@@ -47,17 +50,20 @@ window#waybar.empty #window {
 
 .modules-right {
   background: @bg;
+  border: 1px solid @ia1;
   border-radius: 5px;
   margin: 2px 2px 2px -10px;
   padding: 5px 15px 5px 15px ;
+  box-shadow: 1px 3px 3px 3px @ia1
 }
 
 /* --- Workspaces --- */
 #workspaces {
   background-color: @bg;
   box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
-  border-radius: 5px;
+  margin: 1px 10px 1px 0px;
+  border-radius: 0px;
+  border-right: 1px solid @ia1
 }
 
 #workspaces button {
@@ -96,7 +102,8 @@ window#waybar.empty #window {
 #custom-omarchy{
   padding: 0px 15px 0px 7px;
   font-size: 30px;
-  border-radius: 5px;
+  border-right: 1px solid @ia1;
+  border-radius: 0px;
   background-color: @bg;
   color: @rd1;
   margin: 1px 5px 2px 1px;
@@ -116,7 +123,8 @@ window#waybar.empty #window {
   font-size: 25px}
 #custom-powermenu{
   color:@fg;
-  padding:0px 10px 0px 5px
+  border-radius:5px;
+  padding:0px 15px 0px 10px
 }
 #network{
   color:@fg;
@@ -132,18 +140,35 @@ window#waybar.empty #window {
 #bluetooth,
 #pulseaudio,
 #custom-weather,
-#backlight,
 #custom-update,
 #custom-screenrecording-indicator,
 #custom-idle-indicator,
 #custom-nvidia,
-#custom-notification-silencing-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  padding: 0px 10px 0px 10px;
+  margin: 0 2px;
+  color: @fg;
+  border-radius: 0px;
+  border-left: 2px solid @ia1;
+  
+  
+}
+#backlight{
+  min-width: 12px;
+  padding: 0px 10px 0px 10px;
+  margin: 0 2px;
+  color: @fg;
+  border-radius: 0px;
+
+
+  }
 #clock {
   min-width: 12px;
   padding: 0px 5px 0px 5px;
   margin: 0 2px;
-  color: @fg
-  
+  color: @fg;
+
 }
 
 /* --- Right module Hover color --- */
