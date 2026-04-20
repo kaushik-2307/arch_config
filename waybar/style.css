@@ -179,7 +179,6 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #network:hover,
 #custom-omarchy:hover,
-#clock:hover,
 #backlight:hover,
 #pulseaudio:hover {
  background-color: @fg;
