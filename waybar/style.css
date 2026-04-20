@@ -188,7 +188,7 @@ window#waybar.empty #window {
 }
 
 #cava {
-  padding: 0 7px;
+  padding: 0px 10px 0px 10px;
   color:@fg;
   background-color: @bg;
   border-radius: 0px;
