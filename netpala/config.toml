@@ -46,9 +46,9 @@
 [colors]
   primary = "#a7abca"
   active = "#9cca69"
-  active_text = "#cda162"
-  selection_bg = "#5a6988"
-  inactive = "#444a66"
+  active_text = "#a6e3a1"
+  selection_bg = "#1e1e1e"
+  inactive = "#ffffff"
   error = "#ff0000"
   error_text = "#aa0000"
   help_text = "#a7abca"
