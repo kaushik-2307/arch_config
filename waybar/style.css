@@ -116,7 +116,7 @@ window#waybar.empty #window {
 #bluetooth,
 #network{
   margin: 0px 2px;
-  font-size: 25px}
+  font-size: 17px}
 #custom-powermenu{
   color:@fg;
   border-radius:5px;

@@ -40,6 +40,7 @@
   },
   "custom/omarchy": {
     "format": "󰣇",
+    "tooltip": false,
     "on-click": "~/.config/rofi/launcher/launcher.sh"
   },
   "hyprland/window": {
@@ -126,20 +127,21 @@
       "󰤨"
     ],
     "format": "{icon}",
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰈀",
+    "format-wifi": "{icon}  {essid}",
+    "format-ethernet": "󰈀  {ifname}",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "kitty --title=com.omarchy.netpala netpala"
+    "on-click": "kitty --title=com.omarchy.netpala netpala",
+    "max-length": 15
   },
   "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
+    "format": "{icon} {capacity}%",
+    "format-discharging": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
     "format-plugged":" {capacity}%",
     "format-icons": {
       "charging": [
@@ -170,6 +172,7 @@
     "format-full": "󰂅 {capacity}%",
     "tooltip-format-discharging": "{timeTo}",
     "tooltip-format-charging": "{timeTo}",
+    "tooltip-format-full": "{power}",
     "interval": 5,
     "on-click": "omarchy-menu power",
     "states": {
@@ -180,14 +183,15 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-    "format-connected": "",
-    "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "kitty --title=bluetui bluetui"
+    "format-connected": "󰂱 {device_alias}",
+    "tooltip-format": "{device_alias} - 󰥉 {device_battery_percentage}%",
+    "on-click": "kitty --title=bluetui bluetui",
+    "max-length": 15
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "on-click": "kitty --title=wiremix wiremix",
-    "tooltip-format": "Playing at {volume}%",
+    "tooltip-format": "{desc}",
     "scroll-step": 2,
     "format-muted": "󰝟",
     "format-icons": {
@@ -247,7 +251,7 @@
     "bar_delimiter": 0,
     "input_delay": 0,
     "sleep_timer": 2,
-    "hide_on_silence": true,
+    "hide_on_silence": false,
     "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
   },
 
@@ -278,10 +282,12 @@
   },
   "custom/powermenu": {
     "format": "⏻",
-    "on-click": "~/.config/rofi/powermenu/powermenu.sh"
+    "on-click": "~/.config/rofi/powermenu/powermenu.sh",
+    "tooltip": false
   },
   "backlight": {
     "device": "intel_backlight",
+    "tooltip": false,
     "format": "{icon} {percent}%",
     "format-icons": ["", ""]
 }
