@@ -247,6 +247,8 @@
     "bars": 12,
     "stereo" : true,
     "method": "pipewire",
+    "sdl_height": 50,
+
     "source": "auto",
     "bar_delimiter": 0,
     "input_delay": 0,
