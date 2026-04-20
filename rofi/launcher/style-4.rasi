@@ -33,7 +33,7 @@ window {
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            @background;
     cursor:                      "default";
@@ -46,7 +46,7 @@ mainbox {
     margin:                      0px;
     padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px 0px 0px 0px;
+    border-radius:               5px;
     border-color:                @selected;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
@@ -58,7 +58,7 @@ inputbar {
     spacing:                     10px;
     margin:                      0px;
     padding:                     12px;
-    border:                      3px solid;
+    border:                      2px solid;
     border-radius:               4px;
     border-color:                @selected;
     background-color:            @background;
@@ -111,9 +111,9 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                5px ;
+    handle-width:                0px ;
     handle-color:                @selected;
-    border-radius:               0px;
+    border-radius:               2px;
     background-color:            @background-alt;
 }
 
@@ -132,14 +132,14 @@ element {
     cursor:                      pointer;
 }
 element normal.normal {
-    background-color:            transparent;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 element selected.normal {
-    border:                      3px solid;
+    border:                      2px solid;
     border-radius:               4px;
     border-color:                @selected;
-    background-color:            @background-alt;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 element-icon {
