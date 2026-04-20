@@ -40,7 +40,7 @@ window#waybar.empty #window {
 .modules-center {
   background: @bg;
   border: 2px solid @ia1;
-  margin: 1px 8px 2px 0px;
+  margin: 5px 8px 5px 0px;
   border-radius: 5px;
   padding: 0px;
  }
@@ -56,7 +56,7 @@ window#waybar.empty #window {
 /* --- Workspaces --- */
 #workspaces {
   background-color: @bg;
-  margin: 1px 10px 1px 0px;
+  margin: 5px 10px 5px 0px;
   border-radius: 5px;
   border: 2px solid @ia1
 }
@@ -101,7 +101,7 @@ window#waybar.empty #window {
   border-radius: 5px;
   background-color: @bg;
   color: @rd1;
-  margin: 1px 5px 2px 1px;
+  margin: 5px 5px 5px 1px;
 }
 #window{
   padding: 0 5px;
@@ -165,7 +165,7 @@ window#waybar.empty #window {
 #clock {
   min-width: 12px;
   padding: 0px 5px 0px 5px;
-  margin: 0 2px;
+  margin: 5px 0px 5px 0px;
   color: @fg;
 
 }
@@ -194,7 +194,7 @@ window#waybar.empty #window {
   color:@fg;
   background-color: @bg;
   border-radius: 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 5px 0px 5px 0px;
   border-radius: 0px 5px 5px 0px ;
   border-right: 2px solid @ia1;
   border-bottom: 2px solid @ia1;
@@ -212,7 +212,7 @@ tooltip {
   border-bottom: 2px solid @ia1;
   border-top: 2px solid @ia1;
   background-color: @bg;
-  margin: 0px 0px 0px 0px;
+  margin: 5px 0px 5px 0px;
   color: @fg;
 }
 
