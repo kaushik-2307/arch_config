@@ -12,7 +12,7 @@
   font-size: 15px;
   font-weight: bold;
   min-height: 0;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
   }
 
 
@@ -66,8 +66,6 @@ window#waybar.empty #window {
   margin: 5px 5px 5px 5px;
   padding: 0px 10px 0px 10px;
   border-radius: 10px;
-  transition-duration:0.3s;
-  transition-timing-function: ease-in-out;
 }
 
 #workspaces button:hover{
@@ -96,8 +94,6 @@ window#waybar.empty #window {
   transition-duration: 0.3s;
 }
 #workspaces button.empty.inactive{
-  transition-duration:0.3s;
-  transition-timing-function: ease-out;
 }
 
 /* --- Custom Color+Shdow Omarchy --- */
