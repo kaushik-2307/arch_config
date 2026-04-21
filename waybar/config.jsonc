@@ -241,7 +241,7 @@
 "cava": {
     "cava_config": "/home/kaushik/.config/cava/config",
     "framerate": 30,
-    "autosens": 1,
+    "autosens": 0,
     "bars": 12,
     "stereo" : true,
     "method": "pipewire",
