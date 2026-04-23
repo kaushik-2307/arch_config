@@ -12,8 +12,7 @@
   "modules-center": ["clock"],
   "modules-right": [
     "backlight",
-    "pulseaudio",
-    "battery",
+    "battery","pulseaudio",
     "bluetooth",
     "network","custom/powermenu"
   ],
@@ -175,7 +174,6 @@
     "tooltip-format-charging": "{timeTo}",
     "tooltip-format-full": "{power}",
     "interval": 5,
-    "on-click": "omarchy-menu power",
     "states": {
       "warning": 20,
       "critical": 10

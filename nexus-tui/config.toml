@@ -1,0 +1,20 @@
+[player]
+mpv_path = "mpv"
+extra_args = ["--no-terminal"]
+stream_mode = "sub"
+quality = "best"
+skip_segments = "none"
+resume_offset_secs = 5
+
+[ui]
+image_protocol = "auto"
+results_limit = 25
+episode_cols = "auto"
+
+[theme]
+accent = "Yellow"
+bar_progress = "Yellow"
+bar_complete = "Teal"
+accent_custom = []
+bar_progress_custom = []
+bar_complete_custom = []
