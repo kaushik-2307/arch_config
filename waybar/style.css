@@ -3,7 +3,7 @@
 @define-color bg #000000;
 @define-color fg #ffffff;
 @define-color rd1 #ffffff;
-@define-color ia1 #1e1e1e;
+@define-color ia1 #1a1e1e;
 
 * {
 
@@ -118,8 +118,7 @@ window#waybar.empty #window {
 /* --- General Modules --- */
 #bluetooth,
 #network{
-  margin: 0px 2px;
-  font-size: 15px}
+  margin: 0px 2px;}
 #custom-powermenu{
   color:@fg;
   border-radius:5px;
