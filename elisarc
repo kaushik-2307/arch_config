@@ -1,0 +1,16 @@
+[ElisaFileIndexer]
+RootPath[$e]=$HOME/KAUS/Music/E.music
+
+[PlayerSettings]
+ShowNowPlayingBackground=false
+UseFavoriteStyleRatings=true
+
+[Shortcuts]
+toggle_playlist=F9
+
+[UiSettings]
+ColorScheme=BreezeDark
+
+[Views]
+SortOrderPreferences=Track==DescendingOrder
+SortRolePreferences=Track==FileModificationTime

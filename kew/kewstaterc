@@ -3,11 +3,11 @@
 
 allowNotifications=0
 
-repeatState=1
+repeatState=2
 
 shuffleEnabled=1
 
-lastVolume=55
+lastVolume=100
 
 [track cover]
 
