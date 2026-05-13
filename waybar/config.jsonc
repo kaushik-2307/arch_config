@@ -107,7 +107,7 @@
       "on-click-right": "mode",
       "format": {
         "month": "<span color='#ffead3'><b>{}</b></span>",
-        "weekdays": "<span color='#1e1e1e'><b>{}</b></span>",
+        "weekdays": "<span color='#86bae1'><b>{}</b></span>",
         "today": "<span color='#a6e3a1'><b>{}</b></span>"
       }
     },
@@ -286,7 +286,7 @@
     "device": "intel_backlight",
     "tooltip": false,
     "format": "{icon} {percent}%",
-    "format-icons": ["", ""]
+    "format-icons": ["", ""]
 }
 
 }
