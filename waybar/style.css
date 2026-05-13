@@ -54,7 +54,6 @@ window#waybar.empty #window {
 
 /* --- Workspaces --- */
 #workspaces {
-  background-color: @bg;
   margin: 0px 5px 0px 0px;
   border-radius: 5px;
   border: 2px solid @ia1
@@ -71,7 +70,7 @@ window#waybar.empty #window {
 #workspaces button:hover{
   padding: 0px 10px 0px 10px;
   color :@bg;
-  background-color: @fg;
+  background-color: #ffffff;
 }
 
 
@@ -182,7 +181,7 @@ window#waybar.empty #window {
 #custom-omarchy:hover,
 #backlight:hover,
 #pulseaudio:hover {
- background-color: @fg;
+ background-color: #ffffff;
  color:@bg;
  transition-duration: 0.2s;
 
