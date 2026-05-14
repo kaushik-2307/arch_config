@@ -192,4 +192,7 @@ if command -q zoxide
 end
 set -x EDITOR nvim
 set -x VISUAL nvim
+function yt
+  yt-dlp $argv --embed-metadata --embed-thumbnail -f bestaudio -P "/home/kaushik/KAUS/Music/E.music" --extract-audio --audio-format flac --audio-quality 0
+end
 
