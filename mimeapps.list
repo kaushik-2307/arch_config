@@ -10,6 +10,7 @@ application/xhtml+xml=zen.desktop
 application/x-extension-xhtml=zen.desktop
 application/x-extension-xht=zen.desktop
 x-scheme-handler/readest=readest-handler.desktop
+text/plain=nvim.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -25,3 +26,4 @@ application/x-extension-xht=zen.desktop;
 image/png=zen.desktop;
 image/gif=zen.desktop;
 image/jpeg=zen.desktop;
+text/plain=kitty-open.desktop;nvim.desktop;
