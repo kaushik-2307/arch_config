@@ -78,29 +78,20 @@
 
 
 
-/* --- Media Player and Visualiser --- */
+/* --- Media Player --- */
 
  #mpris {
   color: @fg;
   background-color: @bg;
   border-left: 2px solid @bd;
   border-top: 2px solid @bd;
+  border-right: 2px solid @bd;
   border-bottom: 2px solid @bd;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
   padding: 0px 7px 0px 7px;
   margin: 0px 0px 0px 0px;
 }
 
- #cava {
-  color: @fg;
-  background-color: @bg;
-  border-top: 2px solid @bd;
-  border-right: 2px solid @bd;
-  border-bottom: 2px solid @bd;
-  border-radius: 0px 5px 5px 0px;
-  padding: 0px 10px 0px 10px;
-  margin: 0px 0px 0px 0px;
-}
 /* --- Clock --- */
  #clock {
    color: @fg;

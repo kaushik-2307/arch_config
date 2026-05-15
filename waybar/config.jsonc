@@ -10,7 +10,7 @@
   "margin-top": 1,
   "margin-right": 0,
   "maring-left": 0,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces","mpris","cava"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces","mpris"],
   "modules-center": ["clock"],
   "modules-right": ["temperature", "battery", "pulseaudio", "bluetooth", "network", "custom/powermenu"],
   "hyprland/workspaces": {
@@ -161,21 +161,10 @@
       "paused": "⏸",
       "playing":""
     },
-    "max-length": 15,
+    "max-length": 25,
     "tooltip-format": "{player} - {title} - {position} "
   },
-  "cava": {
-    "framerate": 60,
-    "autosens": 1,
-    "bars": 12,
-    "method": "pipewire",
-    "source": "auto",
-    "bar_delimiter": 0,
-    "input_delay": 0,
-    "sleep_timer": 2,
-    "hide_on_silence": true,
-    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
-  },
+
 
   "temperature": {
         "thermal-zone": 4,
