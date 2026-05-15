@@ -59,7 +59,6 @@ if status is-interactive
     #   end
     #   echo $result
     # end
-
     # LS_COLORS
     source ~/.config/fish/ls_colors.fish
     # Better Alternatives
