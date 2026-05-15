@@ -165,16 +165,14 @@
     "tooltip-format": "{player} - {title} - {position} "
   },
   "cava": {
-    "cava_config": "/home/kaushik/.config/cava/config",
-    "framerate": 30,
-    "autosens": 0,
+    "framerate": 60,
+    "autosens": 1,
     "bars": 12,
-    "stereo" : true,
     "method": "pipewire",
     "source": "auto",
     "bar_delimiter": 0,
     "input_delay": 0,
-    "sleep_timer": 0,
+    "sleep_timer": 2,
     "hide_on_silence": true,
     "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
   },

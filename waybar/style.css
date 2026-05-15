@@ -228,8 +228,7 @@
   #workspaces button.empty:hover,
   #workspaces button.persistent:hover,
   #workspaces button:hover {
-    color: @bg;
-    background-color: @fg;
+    color: @fg;
   }
 
   #custom-omarchy:hover,
