@@ -4,6 +4,8 @@
  @define-color fg #ffffff;
  @define-color bga #1e1e1e;
  @define-color bd #3a3a3a;
+ @define-color wr #FFD100;
+ @define-color cr #FF0000;
 
 /* --- Universal rules --- */
 
@@ -58,22 +60,23 @@
   border-radius: 10px;
 }
 
- #workspaces button.urgent {
-  color: red;
-  background-color: @bga;
-}
-
  #workspaces button.active {
+   color: @bg;
   background-color: @fg;
   padding: 0px 20px 0px 20px;
-  color: @bg;
 }
 
+ #workspaces button.urgent {
+   color: @cr;
+   background-color: @bga;
+ }
+ #workspaces button.empty {
+   color: @fg;
+   background-color: @bga;
+ }
 
- #workspaces button.empty.active {
-  color: @bg;
-  opacity: 1;
-}
+
+
 
 /* --- Media Player and Visualiser --- */
 
@@ -82,17 +85,15 @@
   background-color: @bg;
   border-left: 2px solid @bd;
   border-top: 2px solid @bd;
-  border-right: 2px solid @bd;
   border-bottom: 2px solid @bd;
   border-radius: 5px 0px 0px 5px;
-  padding: 0px 7px 0px 0px;
+  padding: 0px 7px 0px 7px;
   margin: 0px 0px 0px 0px;
 }
 
  #cava {
   color: @fg;
   background-color: @bg;
-  border-left: 2px solid @bd;
   border-top: 2px solid @bd;
   border-right: 2px solid @bd;
   border-bottom: 2px solid @bd;
@@ -119,9 +120,18 @@
    border-left: 2px solid @bd;
    border-top: 2px solid @bd;
    border-bottom: 2px solid @bd;
-   padding: 0px 10px 0px 10px;
-   margin: 0px 0px 0px 0px;
+   border-radius: 5px 0px 0px 5px;
+   padding: 0px 0px 0px 0px;
+   margin: 0px 0px 0px 5px;
    min-width: 12px;
+ }
+
+ #temperature.warning {
+   color: @wr;
+ }
+
+ #temperature.critical {
+   color: @cr;
  }
 
 
@@ -132,10 +142,18 @@
    background-color: @bg;
    border-top: 2px solid @bd;
    border-bottom: 2px solid @bd;
-   border-radius: 5px;
+   border-radius: 0px;
    padding: 0px 10px 0px 10px;
    margin: 0px 0px 0px 0px;
    min-width: 12px;
+ }
+
+ #battery.warning {
+   color: @wr;
+ }
+
+ #battery.critical {
+   color: @cr;
  }
 
 /* --- Sound Control --- */
@@ -146,37 +164,48 @@
     border-top: 2px solid @bd;
     border-right: 2px solid @bd;
     border-bottom: 2px solid @bd;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     padding: 0px 10px 0px 10px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 5px 0px 0px;
     min-width: 12px;
   }  
 
 /* --- BLuetooth --- */
 
-  #bLuetooth {
+  #bluetooth {
+    font-size: 20px;
     color: @fg;
     background-color: @bg;
     border-left: 2px solid @bd;
     border-top: 2px solid @bd;
     border-bottom: 2px solid @bd;
-    border-radius: 5px;
-    padding: 0px 5px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 10px 0px 10px;
     margin: 0px 0px 0px 0px;
     min-width: 12px;
   }
 
+  #bluetooth.connected {
+    font-size: 15px;
+  }
+
+
 /* --- Network --- */
 
   #network {
+    font-size: 20px;
     color: @fg;
     background-color: @bg;
     border-top: 2px solid @bd;
     border-bottom: 2px solid @bd;
-    border-radius: 5px;
-    padding: 1px 5px 0px 5px;
+    border-radius: 0px;
+    padding: 0px 17px 0px 10px;
     margin: 0px 0px 0px 0px;
     min-width: 12px;
+  }
+
+  #network.wifi {
+    font-size: 15px;
   }
 
 /* --- PowerMenu --- */
@@ -187,14 +216,21 @@
     border-top: 2px solid @bd;
     border-right: 2px solid @bd;
     border-bottom: 2px solid @bd;
-    border-radius: 5px;
-    padding: 0px 13px 0px 10px;
-    margin: 0px 2px 0px 0px;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0px 15px 0px 12px;
+    margin: 0px 0px 0px 0px;
     min-width: 12px;
   }
 
 
 /* --- Hover Transitions --- */
+  #workspaces button.active:hover,
+  #workspaces button.empty:hover,
+  #workspaces button.persistent:hover,
+  #workspaces button:hover {
+    color: @bg;
+    background-color: @fg;
+  }
 
   #custom-omarchy:hover,
   #clock:hover,
@@ -206,6 +242,7 @@
   #custom-powermenu:hover {
     color: @bg;
     background-color: @fg;
+    border-radius: 10px;
   }
 
 

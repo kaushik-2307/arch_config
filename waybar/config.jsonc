@@ -1,3 +1,5 @@
+
+
 {
   
   "reload_style_on_change": true,
@@ -79,9 +81,10 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon}",
-    "format-wifi": "{icon}  {essid}",
-    "format-ethernet": "󰈀  {ifname}",
+    "format": "󰤮",
+    "format-disabled": "󰯡",
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -128,20 +131,21 @@
     "tooltip-format-full": "{power}",
     "interval": 5,
     "states": {
-      "warning": 20,
+      "warning": 30,
       "critical": 10
     }
   },
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
+    "format-off": "󰂲",
     "format-connected": "󰂱 {device_alias}",
     "tooltip-format": "{device_alias} - 󰥉 {device_battery_percentage}%",
     "on-click": "kitty --title=bluetui bluetui",
     "max-length": 15
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
     "on-click": "kitty --title=wiremix wiremix",
     "tooltip-format": "{desc}",
     "scroll-step": 2,
@@ -152,7 +156,6 @@
   },
   "mpris": {
     "format": "{status_icon} {dynamic}",
-    //"format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} {title}",
     "status-icons": {
       "paused": "⏸",
@@ -161,7 +164,7 @@
     "max-length": 15,
     "tooltip-format": "{player} - {title} - {position} "
   },
-"cava": {
+  "cava": {
     "cava_config": "/home/kaushik/.config/cava/config",
     "framerate": 30,
     "autosens": 0,
@@ -176,11 +179,12 @@
     "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
   },
 
-"temperature": {
-        "thermal-zone": 1,
-        "format":"{temperatureC}°C ",
+  "temperature": {
+        "thermal-zone": 4,
+        "format":" {icon} {temperatureC}°C ",
         "critical-threshold": 70,
-        "format-critical": " {temperatureC}°C",
+        "warning-threshold": 50,
+        "format-critical": "{icon} {temperatureC}°C",
         "format-icons": [
           "", // Icon: temperature-empty
           "", // Icon: temperature-quarter
@@ -188,12 +192,8 @@
           "", // Icon: temperature-three-quarters
           ""  // Icon: temperature-full
   ],
-    "tooltip": true
-  },
-  "custom/nvidia": {
-    "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\), \\([0-9]\\+\\)/\\1% 🌡️\\2°C/g'",
-    "format": "{} 🖥️",
-    "interval": 2
+    "tooltip": false,
+    "on-click": "kitty btop"
   },
   "custom/powermenu": {
     "format": "⏻",
@@ -205,6 +205,6 @@
     "tooltip": false,
     "format": "{icon} {percent}%",
     "format-icons": ["", ""]
-}
+  }
 
 }
