@@ -22,39 +22,20 @@
     "modules": [
 	"break",
 	"title",
-        {
-            "type": "os",
-            "key": "os    ",
-            "keyColor": "33",  // = color3
-        },
+
         {
             "type": "kernel",
             "key": "kernel",
-            "keyColor": "33",
+
         },
-        {
-            "type": "host",
-            "format": "{5} {1}",
-            "key": "host  ",
-            "keyColor": "33",
-        },
-        {
-            "type": "packages",
-            "format": "{} (pacman)",
-            "key": "pkgs  ",
-            "keyColor": "33",  
-        },
-        {
-            "type": "uptime",
-            "format": "{2}h {3}m",
-            "key": "uptime",
-            "keyColor": "33",
-        },
+        "cpu",
+        "gpu",
         {
             "type": "memory",
             "key": "memory",
-            "keyColor": "33",
+
         },
+        "battery",
         "break",
     ]
 }
