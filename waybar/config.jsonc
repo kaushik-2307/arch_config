@@ -10,12 +10,7 @@
   "maring-left": 0,
   "modules-left": ["custom/omarchy", "hyprland/workspaces","mpris","cava"],
   "modules-center": ["clock"],
-  "modules-right": [
-    "backlight",
-    "battery","pulseaudio",
-    "bluetooth",
-    "network","custom/powermenu"
-  ],
+  "modules-right": ["temperature", "battery", "pulseaudio", "bluetooth", "network", "custom/powermenu"],
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -49,53 +44,11 @@
   "icon": true,
 	"icon-size": 14
   },
-  "custom/voxtype": {
-    "exec": "omarchy-voxtype-status",
-    "return-type": "json",
-    "format": "{icon}",
-    "format-icons": {
-      "idle": "",
-      "recording": "󰍬",
-      "transcribing": "󰔟"
-    },
-    "tooltip": true,
-    "on-click-right": "omarchy-voxtype-config",
-    "on-click": "omarchy-voxtype-model"
-  },
-    "custom/idle-indicator": {
-    "on-click": "omarchy-toggle-idle",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/idle.sh",
-    "signal": 9,
-    "return-type": "json"
-  },
-  "custom/notification-silencing-indicator": {
-    "on-click": "omarchy-toggle-notification-silencing",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/notification-silencing.sh",
-    "signal": 10,
-    "return-type": "json"
-  },
-  "custom/update": {
-    "format": "",
-    "exec": "omarchy-update-available",
-    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
-    "tooltip-format": "Omarchy update available",
-    "signal": 7,
-    "interval": 21600
-  },
-    "custom/updatespacman": {
-    "format": "{} {icon}",
-    "return-type": "json",
-    "format-icons": {
-        "has-updates": "󱍷",
-        "updated": "󰂪"
-    },
-    "exec-if": "which waybar-module-pacman-updates",
-    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
-  },
+
   "cpu": {
     "interval": 2,
     "format": " {usage}%",
-    "on-click": "omarchy-launch-or-focus-tui btop"
+    "on-click": "kitty btop"
   },
   "clock": {
     "format": "{:%I:%M %p}",
@@ -197,46 +150,17 @@
       "default": ["", "", ""]
     }
   },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class":"tray-group-item"
-    },
-    "modules": ["custom/expand-icon", "tray", "bluetooth"]
-  },
-  "custom/expand-icon": {
-    "format": "",
-    "tooltip": false
-  },
-  "tray": {
-    "icon-size": 12,
-    "spacing": 12
-  },
-
   "mpris": {
-    "format": "{status_icon} {title}",
+    "format": "{status_icon} {dynamic}",
     //"format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} {title}",
-    "player-icons": {
-      "default": "🎵",
-      "mpv": "🎵"
-    },
     "status-icons": {
       "paused": "⏸",
       "playing":""
     },
-    "max-length": 15
+    "max-length": 15,
+    "tooltip-format": "{player} - {title} - {position} "
   },
-  
-  "custom/weather": {
-    "format": "{}°",
-    "tooltip": true,
-    "interval": 60,
-    "exec": "wttrbar --nerd --location yourlocation",
-    "return-type": "json"
-  },
-
 "cava": {
     "cava_config": "/home/kaushik/.config/cava/config",
     "framerate": 30,
@@ -265,12 +189,6 @@
           ""  // Icon: temperature-full
   ],
     "tooltip": true
-  },
-    "custom/screenrecording-indicator": {
-    "on-click": "omarchy-cmd-screenrecord",
-    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
-    "signal": 8,
-    "return-type": "json"
   },
   "custom/nvidia": {
     "exec": "nvidia-smi --query-gpu=utilization.gpu,temperature.gpu --format=csv,nounits,noheader | sed 's/\\([0-9]\\+\\), \\([0-9]\\+\\)/\\1% 🌡️\\2°C/g'",
