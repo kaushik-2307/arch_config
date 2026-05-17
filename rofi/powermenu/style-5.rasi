@@ -10,6 +10,8 @@
 /*****----- Configuration -----*****/
 configuration {
     show-icons:                 false;
+    kb-cancel: "Escape,MousePrimary";
+    hover-select: true;
 }
 
 /*****----- Global Properties -----*****/

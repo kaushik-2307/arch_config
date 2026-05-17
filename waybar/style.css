@@ -64,7 +64,7 @@
 }
  #workspaces button.active.empty,
  #workspaces button.active {
-   color: @bg;
+  color: @bg;
   background-color: @fg;
   padding: 0px 20px 0px 20px;
 }
@@ -223,7 +223,7 @@
   #workspaces button.persistent:hover,
   #workspaces button:hover {
     color: @bg;
-    background-color: @fg;
+    background: @fg;
   }
 
   #custom-omarchy:hover,
