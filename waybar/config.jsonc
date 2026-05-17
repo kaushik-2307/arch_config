@@ -186,7 +186,8 @@
           ""  // Icon: temperature-full
   ],
     "tooltip": false,
-    "on-click": "kitty btop"
+    "on-click": "omen fan auto && omen mode eco",
+    "on-click-right": "omen fan max && omen mode performance"
   },
   "custom/powermenu": {
     "format": "⏻",
