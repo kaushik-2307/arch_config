@@ -83,16 +83,15 @@
     ],
     "format": "󰤮",
     "format-disabled": "󰯡",
-    "format-wifi": "{icon} {essid}",
+    "format-wifi": "{icon}",
     "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
-    "interval": 3,
-    "spacing": 1,
-    "on-click": "kitty --title=com.omarchy.netpala netpala",
-    "max-length": 15
+    "interval": 1,
+    "spacing":3,
+    "on-click": "kitty --title=com.omarchy.netpala netpala"
   },
   "battery": {
     "format": "{icon} {capacity}%",
@@ -139,7 +138,7 @@
     "format": "",
     "format-disabled": "󰂲",
     "format-off": "󰂲",
-    "format-connected": "󰂱 {device_alias}",
+    "format-connected": "󰂱",
     "tooltip-format": "{device_alias} - 󰥉 {device_battery_percentage}%",
     "on-click": "kitty --title=bluetui bluetui",
     "max-length": 15

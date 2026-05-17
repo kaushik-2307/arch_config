@@ -15,6 +15,7 @@ configuration {
 	  drun-display-format:        "{name}";
     kb-cancel: "Escape,MousePrimary";
     hover-select: true;
+    me-accept-entry: "!MousePrimary";
 }
 
 /*****----- Global Properties -----*****/
