@@ -15,7 +15,7 @@
   font-weight: bold;
   min-height: 0;
   transition-property: background-color, padding;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out
 }
 
@@ -239,7 +239,7 @@
     background-color: @fg;
     border-radius: 7px;
     transition-timing-function: ease-in;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
   }
 
 
