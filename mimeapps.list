@@ -11,6 +11,9 @@ application/x-extension-xhtml=zen.desktop
 application/x-extension-xht=zen.desktop
 x-scheme-handler/readest=readest-handler.desktop
 text/plain=nvim.desktop
+x-scheme-handler/magnet=motrix-next-handler.desktop
+x-scheme-handler/thunder=motrix-next-handler.desktop
+x-scheme-handler/motrixnext=motrix-next-handler.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;

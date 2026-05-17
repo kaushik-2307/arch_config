@@ -156,13 +156,19 @@
   },
   "mpris": {
     "format": "{status_icon} {dynamic}",
-    "format-paused": "{status_icon} {title}",
+    "format-paused": "{status_icon} {dynamic}",
+    "dynamic-scroll": true,
     "status-icons": {
-      "paused": "⏸",
-      "playing":""
+      "playing": "⏸",
+      "paused":""
     },
-    "max-length": 25,
-    "tooltip-format": "{player} - {title} - {position} "
+    "interval": 1,
+    "max-length": 20,
+    "dynamic-len": 20,
+    "dynamic-importance-order": ["artist"],
+    "dynamic-separator": "--",
+    "ellipsis": "....",
+    "tooltip-format": "{player} - {title} - {position}"
   },
 
 
