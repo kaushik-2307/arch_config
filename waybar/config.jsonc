@@ -174,7 +174,7 @@
 
   "temperature": {
         "thermal-zone": 4,
-        "format":" {icon} {temperatureC}°C ",
+        "format":" {icon} {temperatureC}°C",
         "critical-threshold": 70,
         "warning-threshold": 50,
         "format-critical": "{icon} {temperatureC}°C",

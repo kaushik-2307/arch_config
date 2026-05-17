@@ -115,8 +115,8 @@
    border-top: 2px solid @bd;
    border-bottom: 2px solid @bd;
    border-radius: 5px 0px 0px 5px;
-   padding: 0px 0px 0px 0px;
-   margin: 0px 0px 0px 5px;
+   padding: 0px 10px 0px 0px;
+   margin: 0px 0px 0px 0px;
    min-width: 12px;
  }
 
