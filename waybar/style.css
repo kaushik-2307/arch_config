@@ -14,6 +14,9 @@
   font-size: 15px;
   font-weight: bold;
   min-height: 0;
+  transition-property: background-color, padding;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out
 }
 
 /* --- Waybar --- */
@@ -49,7 +52,7 @@
  #workspaces {
   margin: 0px 5px 0px 0px;
   border-radius: 5px;
-  border: 2px solid @bd
+  border: 2px solid @bd;
 }
 
  #workspaces button {
@@ -219,10 +222,12 @@
   #workspaces button.empty:hover,
   #workspaces button.persistent:hover,
   #workspaces button:hover {
-    color: @fg;
+    color: @bg;
+    background-color: @fg;
   }
 
   #custom-omarchy:hover,
+  #mpris:hover,
   #clock:hover,
   #temperature:hover,
   #battery:hover,
@@ -232,7 +237,9 @@
   #custom-powermenu:hover {
     color: @bg;
     background-color: @fg;
-    border-radius: 10px;
+    border-radius: 7px;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
   }
 
 
