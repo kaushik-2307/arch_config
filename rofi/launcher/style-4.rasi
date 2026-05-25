@@ -93,7 +93,7 @@ entry {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     6;
+    columns:                     7;
     lines:                       3;
     cycle:                       true;
     dynamic:                     true;

@@ -213,7 +213,7 @@
   #workspaces button.empty:hover,
   #workspaces button.persistent:hover,
   #workspaces button:hover {
-    color: @bg;
+    color: #1e1e1e;
     background: @fg;
   }
 
