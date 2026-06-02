@@ -45,11 +45,11 @@ window {
 /*****----- Main Box -----*****/
 mainbox {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     20px;
     margin:                      0px;
     padding:                     10px;
-    border:                      0px solid;
-    border-radius:               5px;
+    border:                      1px solid;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
     children:                    [ "inputbar", "listview" ];
@@ -57,7 +57,7 @@ mainbox {
 
 /*****----- Inputbar -----*****/
 inputbar {
-    enabled:                     true;
+    enabled:                     false;
     spacing:                     10px;
     margin:                      0px;
     padding:                     12px;
@@ -93,8 +93,8 @@ entry {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     7;
-    lines:                       3;
+    columns:                     6;
+    lines:                       4;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   true;
@@ -103,11 +103,11 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     0px;
-    margin:                      0px;
+    spacing:                     10px 10px 10px 10px;
+    margin:                      10px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
@@ -125,9 +125,9 @@ element {
     enabled:                     true;
     spacing:                     15px;
     margin:                      0px;
-    padding:                     20px 10px;
+    padding:                     10px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            @background;
     text-color:                  @foreground;
@@ -139,10 +139,10 @@ element normal.normal {
     text-color:                  @foreground;
 }
 element selected.normal {
-    border:                      2px solid;
-    border-radius:               4px;
-    border-color:                @selected;
-    background-color:            @background;
+    border:                      0px solid;
+    border-radius:               10px;
+    border-color:                @background-color;
+    background-color:            #1e1e1e;
     text-color:                  @foreground;
 }
 element-icon {
@@ -164,7 +164,7 @@ element-text {
 error-message {
     padding:                     10px;
     border:                      3px solid;
-    border-radius:               0px;
+    border-radius:               10px;
     border-color:                @selected;
     background-color:            black / 10%;
     text-color:                  @foreground;
