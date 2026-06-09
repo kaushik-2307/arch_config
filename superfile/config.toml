@@ -25,7 +25,7 @@ auto_check_update = true
 #-- cd on quit
 # Should we cd the shell to the last directory open in superfile when the
 # program exits? 
-cd_on_quit = false
+cd_on_quit = true
 
 #-- File Preview
 # Should we open a file preview by default whenever selection-hovering over a
@@ -52,7 +52,8 @@ default_directory = "."
 file_size_use_si = false
 
 #-- Default File Sort Type
-# (0: Name, 1: Size, 2: Date Modified, 3: Type).
+# (0: Name, 1: Size, 2: Date Modified, 3: Type, 4: Natural).
+# Natural sort treats numeric sequences as numbers (e.g., file2 before file10).
 default_sort_type = 0
 
 #-- Sort Order Reversing
@@ -60,13 +61,13 @@ default_sort_type = 0
 # false: Ascending.
 sort_order_reversed = false
 
-#-- Case-Sensitive Sorting (only for Name Sort)
+#-- Case-Sensitive Sorting
 # An uppercase "B" comes before a lowercase "a" if true.
 case_sensitive_sort = false
 
 #-- Exit Shell on Success
 # Whether to exit the shell on successful command execution.
-shell_close_on_success = true
+shell_close_on_success = false
 
 #-- Page Scroll Size
 # Number of lines to scroll for PgUp/PgDown keys (0: full page, default behavior).
@@ -94,11 +95,11 @@ file_panel_name_percent = 50
 
 #-- Theme
 # Put your theme's name here!
-theme = "onedark"
+theme = "catppuccin-mocha"
 
 #-- Code Previewer
 # Whether to use the builtin syntax highlighting with chroma or use bat. Values: "" for builtin chroma, "bat" for bat
-code_previewer = "bat"
+code_previewer = ""
 
 #-- Nerd Fonts Support
 # Whether to enable support for Nerd Fonts symbols.
@@ -123,12 +124,17 @@ file_preview_width = 0
 #-- File Preview Border
 # Enable border around the file preview panel for better visual separation.
 # Default: false (no border)
-enable_file_preview_border = true
+enable_file_preview_border = false
 
 #-- Sidebar Width
 # If you don't want to display the sidebar, you can input 0 directly.
 # Values recommended to be in 5–20.
 sidebar_width = 20
+
+#-- Sidebar Section Order
+# Order of sidebar sections (valid values: "home", "pinned", "disks")
+# Only enabled sections will be displayed
+sidebar_sections = ["home", "pinned", "disks"]
 
 #-- Border
 # Make sure to add strings that are exactly one character wide!
@@ -154,7 +160,7 @@ border_middle_right = '┤'
 
 #-- Detailed Metadata
 # Requires: exiftool
-metadata = true
+metadata = false
 
 #-- MD5 Checksum Generation
 # Requires: md5sum
@@ -162,7 +168,7 @@ enable_md5_checksum = false
 #
 #-- Zoxide Support - Smart directory navigation!
 # Requires: zoxide
-zoxide_support = true
+zoxide_support = false
 
 #-- File opening rules
 # Map file extensions to commands used to open them.
@@ -171,8 +177,5 @@ zoxide_support = true
 # Example:
 #   png = "feh"
 #   pdf = "zathura"
-config = "nvim"
-css = "nvim"
-cfg = "nvim"
-conf = "nvim"
+#   conf = "nvim"
 [open_with]
