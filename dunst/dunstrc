@@ -265,7 +265,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/xdg-open
+    browser = /usr/bin/zen-browser
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = false

@@ -235,7 +235,7 @@
 
 
 /* --- Tooltips --- */
-
+  #custom-media-now-playing,
   #tooltip {
     font-size: 10px;
     color : @fg;
@@ -244,11 +244,20 @@
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
   }
+ 
 
-/* --- Hidden mode --- */
+/* --- Extra ---*/
+ #custom-media-now-playing {
+    color: @fg;
+    margin-left: 15px;
+}
 
- .hidden {
-   opacity: 0;
- }
+#custom-media-animation {
+    font-size: 14px;
+    color: @fg;
+}
 
-
+#custom-media-time {
+    color: gray;
+    font-size: 16px;
+}

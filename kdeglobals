@@ -1,2 +1,9 @@
+[KDE]
+ShowDeleteCommand=false
+
 [KShortcutsDialog Settings]
 Dialog Size=946,1013
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
