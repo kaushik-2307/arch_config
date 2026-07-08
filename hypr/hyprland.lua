@@ -138,7 +138,7 @@ hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
 hl.config({
     general = {
         gaps_in = 2,
-        gaps_out = 7,
+        gaps_out = 5,
         border_size = 1,
         -- https://wiki.hypr.land/Configuring/Variables/#variable-types for info about colors
         -- Set to true enable resizing windows by clicking and dragging on borders and gaps
@@ -184,6 +184,7 @@ hl.config({
 hl.config({
     animations = {
         enabled = true,
+
         -- Default curves, see https://wiki.hypr.land/Configuring/Animations/#curves
         --        NAME,           X0,   Y0,   X1,   Y1
         -- Default animations, see https://wiki.hypr.land/Configuring/Animations/
@@ -286,7 +287,7 @@ hl.config({
 
 -- See https://wiki.hypr.land/Configuring/Gestures
 
--- TODO: manual review: gesture = 3, "horizontal", "workspace"
+hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
 -- Example per-device config
 

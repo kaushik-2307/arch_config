@@ -43,7 +43,7 @@
   background-color: @bg;
   border: 2px solid @bd;
   border-radius: 5px;
-  padding: 0px 15px 0px 7px;
+  padding: 0px 15px 0px 15px;
   margin: 0px 5px 0px 0px;
 }
 
@@ -88,12 +88,24 @@
   background-color: @bg;
   border-left: 2px solid @bd;
   border-top: 2px solid @bd;
-  border-right: 2px solid @bd;
+  border-right: 0px solid @bd;
   border-bottom: 2px solid @bd;
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   padding: 0px 7px 0px 7px;
   margin: 0px 0px 0px 0px;
 }
+ #cava {
+  color: @fg;
+  background-color: @bg;
+  border-left: 0px solid @bd;
+  border-top: 2px solid @bd;
+  border-right: 2px solid @bd;
+  border-bottom: 2px solid @bd;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0px 7px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
 
 /* --- Clock --- */
  #clock {
@@ -218,7 +230,6 @@
   }
 
   #custom-omarchy:hover,
-  #mpris:hover,
   #clock:hover,
   #temperature:hover,
   #battery:hover,
