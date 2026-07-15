@@ -59,6 +59,8 @@ local fileManager = "nautilus"
 
 local menu = "~/.config/rofi/launcher/launcher.sh"
 
+local HOME = "/home/kaushik/"
+
 --################
 
 --## AUTOSTART ###
@@ -124,8 +126,14 @@ hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
 --##### PLUGINS ######
 
 --####################
+package.path = package.path .. ";" .. HOME .. "/.config/hypr/?.lua"
 
---####################
+local hyprspace = require("Hyprspace")
+hyprspace.setup()
+
+
+--
+----####################
 
 --## LOOK AND FEEL ###
 
@@ -438,6 +446,8 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+
 
 --#############################
 
