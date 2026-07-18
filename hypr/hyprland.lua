@@ -95,7 +95,7 @@ hl.env("HYPRCURSOR_SIZE", 40)
 
 hl.env("XCURSOR_THEME", "capitaine-cursors")
 
-hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
+hl.env("AQ_DRM_DEVICES", "/dev/dri/card1:/dev/dri/card0")
 
 --##################
 
@@ -126,10 +126,6 @@ hl.env("AQ_DRM_DEVICES", "/dev/dri/card1")
 --##### PLUGINS ######
 
 --####################
-package.path = package.path .. ";" .. HOME .. "/.config/hypr/?.lua"
-
-local hyprspace = require("Hyprspace")
-hyprspace.setup()
 
 
 --
@@ -470,7 +466,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name  = "fix-xwayland-drags",
+    name  = "fix-xwayland-drags", 
     match = {
         class = "^$",
         title = "^$",
@@ -494,43 +490,45 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name  = "float_1",
     match = {
         title = "com.omarchy.netpala",
     },
-    -- TODO: review rule: "float 1"
+    float = true,
+    size = {642 , 646 },
+    move = {1270 , 70}
+
 })
 
 hl.window_rule({
-    name  = "float_1",
     match = {
         title = "bluetui",
     },
-    -- TODO: review rule: "float 1"
+    float = true,
+    size = {642, 646},
+    move = {1270, 70}
+
+
 })
 
 hl.window_rule({
-    name  = "float_1",
     match = {
         title =  "wiremix",
+
     },
-    -- TODO: review rule: "float 1"
+    float = true,
+    size = {642, 646},
+    move = {1270, 70}
+
+
 })
 
 hl.window_rule({
-    name  = "float_1",
-    match = {
-        title = "kew",
-    },
-    -- TODO: review rule: "float 1"
-})
-
-hl.window_rule({
-    name  = "float_1",
     match = {
        class = "org.gnome.Calculator",
+
     },
-    -- TODO: review rule: "float 1"
+    float = true,
+    move = {1553, 453}
 })
 
 -- Autostart
