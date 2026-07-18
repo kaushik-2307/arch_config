@@ -97,6 +97,8 @@ hl.env("XCURSOR_THEME", "capitaine-cursors")
 
 hl.env("AQ_DRM_DEVICES", "/dev/dri/card1:/dev/dri/card0")
 
+hl.env("HYPRSHOT_DIR", "/home/kaushik/Pictures/Screenshots/")
+
 --##################
 
 --## PERMISSIONS ###
@@ -330,6 +332,8 @@ hl.bind(mainMod .. " + " .. "A", hl.dsp.exec_cmd("~/.config/rofi/launcher/launch
 
 hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
+hl.bind("PRINT", hl.dsp.exec_cmd("~/.config/rofi/screenshot/screenshot.sh"))
+
 -- dwindle
 
 hl.bind(mainMod .. " + " .. "J", hl.dsp.layout("togglesplit"))
@@ -539,4 +543,5 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("gsettings set org.gnome.desktop.interface icon-theme 'Papirus'")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("syncthing --no-browser")
+    hl.exec_cmd("kdeconnectd")
 end)

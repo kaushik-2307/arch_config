@@ -170,7 +170,8 @@
     "dynamic-importance-order": ["artist"],
     "dynamic-separator": "--",
     "ellipsis": "....",
-    "tooltip-format": "{player} - {title} - {position}"
+    "tooltip-format": "{player} - {title} - {position}",
+    "ignored-players": ["kdeconnect"]
   },
 
   "cava": {

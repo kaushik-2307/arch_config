@@ -1,0 +1,11 @@
+[General]
+generalPersistent=false
+generalUrgency=0
+
+[applications]
+1\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\xff\xff\xff\xff\xff\xff\xff\xff\0\xff\xff\xff\xff)
+2\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0K\0\x44\0\x45\0 \0\x43\0o\0n\0n\0\x65\0\x63\0t\0\0\0\x14\0k\0\x64\0\x65\0\x63\0o\0n\0n\0\x65\0\x63\0t\x1\xff\xff\xff\xff)
+3\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x10\0H\0y\0p\0r\0s\0h\0o\0t\0\0\0\0\x1\xff\xff\xff\xff)
+4\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x10\0\x64\0u\0n\0s\0t\0i\0\x66\0y\0\0\0\0\x1\xff\xff\xff\xff)
+5\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\f\0V\0o\0l\0u\0m\0\x65\0\0\0\0\x1\xff\xff\xff\xff)
+size=5

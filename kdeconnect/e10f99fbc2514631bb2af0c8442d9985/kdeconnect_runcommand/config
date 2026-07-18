@@ -1,2 +1,2 @@
 [General]
-commands="@ByteArray({\"01011aff_4185_4dc5_ae60_7853c5747ec5\":{\"command\":\"loginctl lock-session\",\"name\":\"Lock Screen\"},\"f74d52f4_74ba_44ed_8d50_9b4673a5f0f5\":{\"command\":\"shutdown now\",\"name\":\"Shutdown\"}})"
+commands="@ByteArray({\"01011aff_4185_4dc5_ae60_7853c5747ec5\":{\"command\":\"loginctl lock-session\",\"name\":\"Lock Screen\"},\"4455efaf_57d0_4c1a_8381_e5930a6c294b\":{\"command\":\"loginctl unlock-session\",\"name\":\"Unlock Screen\"},\"f74d52f4_74ba_44ed_8d50_9b4673a5f0f5\":{\"command\":\"shutdown now\",\"name\":\"Shutdown\"}})"
