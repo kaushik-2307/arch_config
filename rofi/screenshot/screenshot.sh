@@ -55,24 +55,14 @@ run_rofi() {
 }
 
 # Execute Command
-run_cmd() {
-		if [[ $1 == '--shutdown' ]]; then
-			hyprshot -m screen
-		elif [[ $1 == '--reboot' ]]; then
-			hyprshot -m region
-	else
-		exit 0
-  fi
-}
-
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
     $shutdown)
-		run_cmd --shutdown
+		hyprshot -m output
         ;;
     $reboot)
-		run_cmd --reboot
+		hyprshot -m region
         ;;
     $lock)
 		hyprshot -m window
