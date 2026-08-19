@@ -19,6 +19,8 @@
     # will be ignored.
     follow = none
 
+    timeout = 0
+
     ### Geometry ###
 
     # The width of the window, excluding the frame.
@@ -47,7 +49,7 @@
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 20
+    notification_limit = 2
 
     ### Progress bar ###
 
@@ -118,7 +120,7 @@
     # If value is greater than 0, separator_height will be ignored and a border
     # of size frame_width will be drawn around each notification instead.
     # Click events on gaps do not currently propagate to applications below.
-    gap_size = 5
+    gap_size = 0
 
     # Define a color for the separator.
     # possible values are:
@@ -173,7 +175,7 @@
     #
     # It's important to note that markup inside the format option will be parsed
     # regardless of what this is set to.
-    markup = full
+    markup = no
 
     # The format of the message.  Possible variables are:
     #   %a  appname
@@ -200,7 +202,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = -1
 
     # Specify where to make an ellipsis in long lines.
     # Possible values are "start", "middle" and "end".
@@ -213,7 +215,7 @@
     stack_duplicates = true
 
     # Hide the count of stacked notifications with the same content
-    hide_duplicate_count = false
+    hide_duplicate_count = true
 
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -522,7 +524,7 @@
 	format = "<b>%s</b>"
         min_icon_size = 32
         max_icon_size = 32
-	timeout = 1
+	timeout = 0
 	set_transient = no
 
 

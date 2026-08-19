@@ -1,5 +1,5 @@
 [Plugins]
 kdeconnect_screensaver_inhibitEnabled=false
-kdeconnect_sendnotificationsEnabled=true
+kdeconnect_sendnotificationsEnabled=false
 kdeconnect_shareinputdevicesEnabled=true
 kdeconnect_virtualmonitorEnabled=true

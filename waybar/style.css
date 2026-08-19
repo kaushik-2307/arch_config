@@ -53,6 +53,7 @@
   margin: 0px 5px 0px 0px;
   border-radius: 5px;
   border: 2px solid @bd;
+  background-color: @bg;
 }
 
  #workspaces button {
@@ -94,16 +95,29 @@
   padding: 0px 7px 0px 7px;
   margin: 0px 0px 0px 0px;
 }
- #cava {
+ #cava.top {
+  color: @fg;
+  background-color: @bg;
+  border-left: 0px solid @bd;
+  border-top: 0px solid @bd;
+  border-right: 2px solid @bd;
+  border-bottom: 2px solid @bd;
+  border-radius: 0px 0px 5px 0px;
+  padding: 0px 7px 0px 0px;
+  margin-top: 0px;
+  letter-spacing: 1.5px;
+}
+ #cava.bottom {
   color: @fg;
   background-color: @bg;
   border-left: 0px solid @bd;
   border-top: 2px solid @bd;
   border-right: 2px solid @bd;
-  border-bottom: 2px solid @bd;
-  border-radius: 0px 5px 5px 0px;
+  border-bottom: 0px solid @bd;
+  border-radius: 0px 5px 0px 0px;
   padding: 0px 7px 0px 0px;
-  margin: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  letter-spacing: 1.5px;
 }
 
 
@@ -161,6 +175,15 @@
  #battery.critical {
    color: @cr;
  }
+
+ #battery.full {
+   color: #00FF19
+ }
+
+ #battery.charging {
+   color:#00FF19
+ }
+
 
 /* --- Sound Control --- */
 

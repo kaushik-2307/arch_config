@@ -447,6 +447,11 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
+hl.bind(mainMod .. "+" .. "F1", hl.dsp.exec_cmd("~/.config/hypr/scripts/fanmode.sh"))
+
+hl.bind(mainMod .. "+" .. "F2", hl.dsp.exec_cmd("~/.config/hypr/scripts/power.sh"))
+
+hl.bind(mainMod .. "+" .. "F4", hl.dsp.exec_cmd("~/.config/hypr/scripts/back.sh"))
 
 
 --#############################

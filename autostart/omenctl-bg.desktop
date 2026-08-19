@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=OmenCtl Background
-Exec=omenctl --hidden
-Icon=omenctl
-Terminal=false
-NoDisplay=true
