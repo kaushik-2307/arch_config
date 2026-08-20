@@ -262,7 +262,7 @@
   #custom-powermenu:hover {
     color: @bg;
     background-color: @fg;
-    border-radius: 7px;
+    border-radius: 0px;
     transition-timing-function: ease-in;
     transition-duration: 0.01s;
   }

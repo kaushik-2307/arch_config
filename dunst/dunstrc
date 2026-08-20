@@ -19,7 +19,7 @@
     # will be ignored.
     follow = none
 
-    timeout = 0
+    timeout = 1
 
     ### Geometry ###
 
@@ -524,7 +524,7 @@
 	format = "<b>%s</b>"
         min_icon_size = 32
         max_icon_size = 32
-	timeout = 0
+	timeout = 1
 	set_transient = no
 
 
